@@ -54,7 +54,9 @@ course_server <- function(id, df_courses){
         mutate(date = as.Date(date, origin = "1899-12-30")) %>%
         select("Date" =date, "Time" = time, "Holes Played" = holes)
       datatable(df, rownames = F
-                , options = list(sDom  = '<"top">lrt<"bottom">ip', scrollY = "10vh")
+                , options = list(sDom  = '<"top">lrt<"bottom">ip'
+                                 , paging = FALSE
+                                 , scrollY = "10vh")
       )
     })
     
@@ -69,7 +71,7 @@ course_server <- function(id, df_courses){
                    )
             )
             ,   column(width = 6
-                       , box(width = 12, title = "Course Notes"
+                       , box(width = 12, title = "Course Notes", height = "23.7vh"
                              , HTML(r_courses()$notes)
                        )
             )
