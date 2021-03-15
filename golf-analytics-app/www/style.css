@@ -1,0 +1,25 @@
+.picker-img{
+  display: inline;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+.skin-blue .main-header .navbar {
+    background-color: #228C22;
+}
+.skin-blue .main-header .logo:hover {
+    background-color: #0B6623;
+}
+
+.skin-blue .main-header .logo {
+    background-color: #0B6623;
+    color: #fff;
+    font-weight:bold;
+    border-bottom: 0 solid transparent;
+}
+
+.nav-tabs-custom>.nav-tabs>li.active {
+    border-top-color: #0B6623;
+}
+.box.box-primary {
+    border-top-color: #0B6623;
+}
