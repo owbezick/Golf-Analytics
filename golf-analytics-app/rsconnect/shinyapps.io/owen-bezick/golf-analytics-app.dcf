@@ -1,0 +1,12 @@
+name: golf-analytics-app
+title: golf-analytics-app
+username:
+account: owen-bezick
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3801508
+bundleId: 4353878
+url: https://owen-bezick.shinyapps.io/golf-analytics-app/
+when: 1615913253.48317
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,15 +1,10 @@
-.picker-img{
-  display: inline;
-  vertical-align: middle;
-  padding-left: 10px;
-}
+
 .skin-blue .main-header .navbar {
     background-color: #228C22;
 }
 .skin-blue .main-header .logo:hover {
     background-color: #0B6623;
 }
-
 .skin-blue .main-header .logo {
     background-color: #0B6623;
     color: #fff;
@@ -22,4 +17,26 @@
 }
 .box.box-primary {
     border-top-color: #0B6623;
+}
+.picker-img{
+  display: inline;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+.box-header{
+  text-align:center;
+}
+.course-info-sub{
+  font-size: 14px;
+  font-weight:bold;
+}
+.bg-aqua{
+  background-color: #228C22!important;
+}
+.small-box h3 {
+  text-align:center;
+}
+
+.small-box p {
+  text-align: center;
 }

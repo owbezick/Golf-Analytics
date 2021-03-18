@@ -10,8 +10,7 @@ library(dplyr)
 
 # Viz
 library(DT)
-library(echarts4r)
-library(googleway)
+library(leaflet)
 
 # Application UI ----
 ui <-dashboardPage(
@@ -24,22 +23,21 @@ ui <-dashboardPage(
                  # Course Panel
                  , course_ui("courses")
                  # Round Panel
-                 , tabPanel(title = "Rounds")
+                 , rounds_ui("rounds")
                  # Bag Panel 
-                 , tabPanel(title = "In The Bag")
+                 , bag_ui("bag")
                  
         )
     )
 ) 
 
-fluidPage(
-    
-)
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
     # Module Calls 
     course_server("courses")
+    rounds_server("rounds")
+    bag_server("bag")
 }
 
 # Run the application 
